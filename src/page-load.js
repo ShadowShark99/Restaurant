@@ -10,10 +10,10 @@ const image = document.createElement("img");
 image.src = steve;
 
 const headline = document.createElement("h2");
-headline.innerHTML = "Cheapest Food NOT Because Lowest Wages :D";
+headline.innerHTML = "We Have THE Cheapest Food AND <span class=\"pay\">Pay<span class=\"none\"> 0$</span> </span> All Our Workers Equally";
 
 const description = document.createElement("div");
-description.innerHTML = "All our food is made with original chicken from the first chicken that were created along with the world";
+description.innerHTML = "From the Creation of the World, There were Chickens, who were there from the start. You are eating THE ORIGINAL, The Source of all chickens";
 
 content.appendChild(image);
 content.appendChild(headline);

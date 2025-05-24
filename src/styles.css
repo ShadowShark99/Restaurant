@@ -1,8 +1,23 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 nav{
   display: flex;
   flex: 1;
+  padding: 20px;
   justify-content: space-around;
+  background-color: azure;
+}
+
+nav > button{
+  border-radius: 0px;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: aliceblue;
 }
 
 
@@ -10,4 +25,16 @@ nav{
   display: grid;
   grid-template-rows: 400px 100px 100px;
 
+}
+
+.pay{
+  background-color: antiquewhite;
+}
+
+.pay:hover > .none{
+  opacity:100;
+}
+
+.none{
+  opacity: 0;
 }
