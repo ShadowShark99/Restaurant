@@ -1,10 +1,11 @@
 import "./styles.css";
 import steve from "./mcSteve.png";
 
-export const load = () => {
+export const homeLoad = () => {
   
 
 const content = document.querySelector("#content");
+content.innerHTML = "";
 
 const image = document.createElement("img");
 image.src = steve;
