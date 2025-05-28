@@ -1,23 +1,44 @@
 import "./styles.css";
-import steve from "./mcSteve.png";
 
-export const homeLoad = () => {
+export const menuLoad = () => {
   
 
 const content = document.querySelector("#content");
 content.innerHTML = "";
 
-const image = document.createElement("img");
-image.src = steve;
+const headline = document.createElement("h1");
+headline.innerHTML = "Menu";
 
-const headline = document.createElement("h2");
-headline.innerHTML = "We Have THE Cheapest Food AND <span class=\"pay\">Pay<span class=\"none\"> 0$</span> </span> All Our Workers Equally";
+const menu = document.createElement("ul");
+const chicken = document.createElement("li");
+chicken.innerHTML = "Chicken";
+const rawChicken = document.createElement("li");
+rawChicken.innerHTML = "Raw Chicken";
+const pork = document.createElement("li");
+pork.innerHTML = "Pork";
+const rawPork = document.createElement("li");
+rawPork.innerHTML = "Raw Pork";
+const beef = document.createElement("li");
+beef.innerHTML = "Beef";
+const rawBeef = document.createElement("li");
+rawBeef.innerHTML = "Raw Beef";
+const fish = document.createElement("li");
+fish.innerHTML = "Fish";
+const rawFish = document.createElement("li");
+rawFish.innerHTML = "Raw Fish";
 
-const description = document.createElement("div");
-description.innerHTML = "From the Creation of the World, There were Chickens, who were there from the start. You are eating THE ORIGINAL, The Source of all chickens";
+menu.appendChild(chicken);
+menu.appendChild(rawChicken);
+menu.appendChild(pork);
+menu.appendChild(rawPork);
+menu.appendChild(beef);
+menu.appendChild(rawBeef);
+menu.appendChild(fish);
+menu.appendChild(rawFish);
 
-content.appendChild(image);
+
+
 content.appendChild(headline);
-content.appendChild(description);
-alert("Restaurant is Opening soon");
+content.appendChild(menu);
+
 };
